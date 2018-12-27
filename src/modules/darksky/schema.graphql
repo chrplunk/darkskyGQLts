@@ -1,7 +1,8 @@
 type WeatherDataType {
-    city: String
-    currentTemp: String
-    currentClouds: String
+    timezone: String
+    currentlyTime: Int
+    currentlySummary: String
+    currentlyHumidity: String
 }
 
 type Query {
