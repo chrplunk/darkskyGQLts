@@ -3,12 +3,10 @@ const path = require('path');
 const fetch = require('node-fetch');
 const port = process.env.PORT || 4000;
 
-//import { HttpLink } from 'apollo-link-http';
 import { ApolloServer } from 'apollo-server';
 import { makeExecutableSchema } from 'graphql-tools';
 import { importSchema } from "graphql-import";
 import { GraphQLSchema } from "graphql";
-//import { HttpOptions} from 'apollo-link-http-common';
 
 let localSchema: GraphQLSchema;
 const folders = fs.readdirSync(path.join(__dirname, "./modules"));
