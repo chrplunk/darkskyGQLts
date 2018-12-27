@@ -2,6 +2,7 @@ type WeatherDataType {
     timezone: String
     currentlyTime: Int
     currentlySummary: String
+    currentlyTemperature: Float
     currentlyHumidity: String
 }
 

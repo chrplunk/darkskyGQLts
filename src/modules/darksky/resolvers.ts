@@ -24,13 +24,14 @@ export const resolvers: ResolverMap = {
                     timezone: jsonResult.timezone,
                     currentlyTime: jsonResult.currently.time,
                     currentlySummary: jsonResult.currently.summary,
-                    currentlyTemperature: jsonResult.currentlyTemperature,
+                    currentlyTemperature: jsonResult.currently.temperature,
                     currentlyHumidity: jsonResult.currently.humidity
                 }
                 
                 console.log("timezone: " + mappedResult.timezone);
                 console.log("current time: " + mappedResult.currentlyTime);
                 console.log("current summary: " + mappedResult.currentlySummary);
+                console.log("current temp: " + mappedResult.currentlyTemperature);
                 console.log("current humidity: " + mappedResult.currentlyHumidity);
 
                 return mappedResult;
