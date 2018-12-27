@@ -1,0 +1,9 @@
+type WeatherDataType {
+    city: String
+    currentTemp: String
+    currentClouds: String
+}
+
+type Query {
+    weatherQuery: WeatherDataType
+}
