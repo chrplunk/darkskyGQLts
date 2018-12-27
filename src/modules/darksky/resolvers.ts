@@ -1,7 +1,6 @@
 import { ResolverMap } from "../../types/graphqltypes";
 //import { fakeweather } from "./fakeweather";
 const dotenv = require("dotenv").config();
-
 const fetch = require("node-fetch");
 
 export const resolvers: ResolverMap = {
@@ -22,7 +21,7 @@ export const resolvers: ResolverMap = {
                             
                 let mappedResult = {
                     timezone: jsonResult.timezone,
-                    currentlyTime: jsonResult.currently.time,
+                    currentlyTime: new Date(jsonResult.currently.time),
                     currentlySummary: jsonResult.currently.summary,
                     currentlyTemperature: jsonResult.currently.temperature,
                     currentlyHumidity: jsonResult.currently.humidity
