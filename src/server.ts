@@ -2,10 +2,10 @@ const fs = require('fs');
 const path = require('path');
 const port = process.env.PORT || 4000;
 
-import { ApolloServer } from 'apollo-server';
-import { makeExecutableSchema } from 'graphql-tools';
-import { importSchema } from "graphql-import";
 import { GraphQLSchema } from "graphql";
+import { importSchema } from "graphql-import";
+import { makeExecutableSchema } from 'graphql-tools';
+import { ApolloServer } from 'apollo-server';
 
 let localSchema: GraphQLSchema;
 const folders = fs.readdirSync(path.join(__dirname, "./modules"));
