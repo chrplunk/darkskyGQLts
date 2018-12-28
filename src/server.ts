@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-const fetch = require('node-fetch');
 const port = process.env.PORT || 4000;
 
 import { ApolloServer } from 'apollo-server';

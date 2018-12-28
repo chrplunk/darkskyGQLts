@@ -1,5 +1,4 @@
 import { ResolverMap } from "../../types/graphqltypes";
-//import { fakeweather } from "./fakeweather";
 const dotenv = require("dotenv").config();
 const fetch = require("node-fetch");
 
